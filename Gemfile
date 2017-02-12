@@ -1,6 +1,11 @@
 source "https://rubygems.org"
 
-# Declare your gem's dependencies in houston-kanban.gemspec.
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+# Declare your gem's dependencies in houston-boards.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
@@ -24,4 +29,4 @@ group :test do
 end
 
 # Use the development version of houston-core
-# gem "houston-core", github: "houston/houston-core", branch: "master"
+gem "houston-core", github: "houston/houston-core", branch: "0.9-dev"

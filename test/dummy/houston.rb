@@ -13,6 +13,6 @@ Houston.config do
   mailer_sender "houston@test.com"
 
   # Mount this module on the dummy Houston application.
-  use :kanban
+  use :boards
 
 end

@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: houston_kanban_development
+  database: houston_boards_development
   host: localhost
   prepared_statements: false
 
 test:
   adapter: postgresql
   encoding: utf8
-  database: houston_kanban_test
+  database: houston_boards_test
   host: localhost
   prepared_statements: false

@@ -1,19 +1,19 @@
-# Houston::Kanban
+# Houston::Boards
 
-TODO: Summary of Houston Kanban.
+TODO: Summary of Houston Boards.
 
 
 ## Installation
 
 In your `Gemfile`, add:
 
-    gem "houston-kanban"
+    gem "houston-boards"
 
 And in `config/main.rb`, add:
 
 ```ruby
-use :kanban do
-  # TODO: specify configuration options for Houston::Kanban here
+use :boards do
+  # TODO: specify configuration options for Houston::Boards here
 end
 ```
 

@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <% @teams.each do |team| %>
+    <li class="list-group-item">
+      <%= link_to team.name, team_board_path(team) %>
+    </li>
+  <% end %>
+</ul>

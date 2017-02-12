@@ -1,4 +1,4 @@
-module Houston::Kanban
+module Houston::Boards
   module ApplicationHelper
   end
 end

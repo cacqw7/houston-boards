@@ -1,4 +1,4 @@
-module Houston::Kanban
+module Houston::Boards
   class ApplicationController < ::ApplicationController
   end
 end

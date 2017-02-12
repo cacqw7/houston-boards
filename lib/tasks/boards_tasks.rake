@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :kanban do
+# task :boards do
 #   # Task goes here
 # end

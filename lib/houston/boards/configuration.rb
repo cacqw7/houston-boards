@@ -1,4 +1,4 @@
-module Houston::Kanban
+module Houston::Boards
   class Configuration
 
     # Define configuration DSL here

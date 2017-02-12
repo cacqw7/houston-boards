@@ -1,15 +1,22 @@
-require "houston/kanban/railtie"
+require "houston/boards/railtie"
 
 module Houston
-  module Kanban
+  module Boards
     class Engine < ::Rails::Engine
-      isolate_namespace Houston::Kanban
+      isolate_namespace Houston::Boards
+
+      # React
+      initializer("my_engine.react-rails") do |app|
+        Rails.application.config.react.variant = :development
+      end
+
+      require 'react-rails'
 
       # Precompile this modules assets
       initializer :assets do |config|
         Rails.application.config.assets.precompile += %w(
-          houston/kanban/application.js
-          houston/kanban/application.css )
+          houston/boards/application.js
+          houston/boards/application.css )
       end
 
       # Include the Engine's migrations with the Application
