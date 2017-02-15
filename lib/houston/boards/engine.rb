@@ -5,13 +5,6 @@ module Houston
     class Engine < ::Rails::Engine
       isolate_namespace Houston::Boards
 
-      # React
-      initializer("my_engine.react-rails") do |app|
-        Rails.application.config.react.variant = :development
-      end
-
-      require 'react-rails'
-
       # Precompile this modules assets
       initializer :assets do |config|
         Rails.application.config.assets.precompile += %w(

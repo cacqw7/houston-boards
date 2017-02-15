@@ -2,7 +2,6 @@
 
 <% if @board.lists.any? %>
   <% @board.lists.each do |list| %>
-    <%= react_component('List', { name: list.name }, {prerender: true }) %>
   <% end %>
 <% else %>
   <%= link_to "Add a Column!" %>
