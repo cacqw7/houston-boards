@@ -3,6 +3,7 @@ module Houston::Boards
     self.table_name = "boards_lists"
 
     belongs_to :team
-    acts_as_list scope: :project
+    has_many :cards
+    acts_as_list scope: :team
   end
 end

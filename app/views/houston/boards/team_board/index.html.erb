@@ -2,6 +2,7 @@
 
 <% if @board.lists.any? %>
   <% @board.lists.each do |list| %>
+    <%= render partial: "list", locals: {list: list} %>
   <% end %>
 <% else %>
   <%= link_to "Add a Column!" %>
